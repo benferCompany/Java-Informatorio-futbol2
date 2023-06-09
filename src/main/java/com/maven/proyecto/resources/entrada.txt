@@ -1,0 +1,5 @@
+ID=1, Nombre=Juan, Apellido=Perez, Altura=1.0, posicion=Arquero, cantidadDeGoles=1, cantidadDePartidos=1, esCapitan=Es capitan, numerosDeCamisetas=1
+ID=2, Nombre=Pedro, Apellido=Gomez, Altura=1.75, posicion=Defensor, cantidadDeGoles=0, cantidadDePartidos=5, esCapitan=No es capitan, numerosDeCamisetas=2
+ID=3, Nombre=Andres, Apellido=Rodriguez, Altura=1.82, posicion=Mediocampista, cantidadDeGoles=3, cantidadDePartidos=10, esCapitan=No es capitan, numerosDeCamisetas=10
+ID=4, Nombre=Luis, Apellido=Martinez, Altura=1.78, posicion=Delantero, cantidadDeGoles=12, cantidadDePartidos=20, esCapitan=No es capitan, numerosDeCamisetas=9
+ID=5, Nombre=Diego, Apellido=Sanchez, Altura=1.85, posicion=Mediocampista, cantidadDeGoles=6, cantidadDePartidos=15, esCapitan=No es capitan, numerosDeCamisetas=6

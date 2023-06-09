@@ -1,0 +1,15 @@
+com\maven\proyecto\services\entrada\file\InputFileService.class
+com\maven\proyecto\entidades\Impl\Persona.class
+com\maven\proyecto\entidades\Impl\JugadorImpl.class
+com\maven\proyecto\services\entrada\console\menu\Menu.class
+com\maven\proyecto\services\entrada\console\miscanner\MyScanner.class
+com\maven\proyecto\entidades\Entrenador.class
+com\maven\proyecto\entidades\Impl\PosicionesImpl.class
+com\maven\proyecto\entidades\Jugador.class
+com\maven\proyecto\entidades\Posiciones.class
+com\maven\proyecto\entidades\Equipo.class
+com\maven\proyecto\services\entrada\console\miscanner\impl\MyScannerImpl.class
+com\maven\proyecto\entidades\Impl\EntrenadorImpl.class
+com\maven\proyecto\entidades\Impl\EquipoImpl.class
+com\maven\proyecto\services\entrada\console\menu\impl\MenuImpl.class
+com\maven\proyecto\App.class
