@@ -1,10 +1,23 @@
 package com.maven.proyecto.entidades;
 
-import java.util.Scanner;
 
+public class Entrenador extends Persona{
 
-public interface Entrenador {
-    public Entrenador crearEntrenador(Scanner scanner);
-    public String getNombre();
-    public String getApellido();
+    protected int edad;
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+   
+
+    @Override
+    public String toString() {
+        return "Entrenador{" + "nombre=" + super.getNombre() + ',' + "apellido=" + super.getApellido() + ',' + "edad=" + this.edad + '}';
+    }
+
 }

@@ -1,7 +1,6 @@
 package com.maven.proyecto.services.entrada.console.menu.impl;
 
-import com.maven.proyecto.entidades.Equipo;
-import com.maven.proyecto.entidades.Impl.EquipoImpl;
+import com.maven.proyecto.entidades.servicios.EquipoServicio;
 import com.maven.proyecto.entidades.Jugador;
 import java.util.Scanner;
 import com.maven.proyecto.services.entrada.console.menu.Menu;
@@ -12,7 +11,7 @@ public class MenuImpl implements Menu {
 
     MyScanner myScanner = MyScannerImpl.getInstance();
     Scanner scanner = myScanner.getScan();
-    Equipo equipo = new EquipoImpl();
+    EquipoServicio equipo = new EquipoServicio();
 
     public Scanner menuCrearEquipo() {
         try {
@@ -38,7 +37,7 @@ public class MenuImpl implements Menu {
 
             }
 
-            Equipo buscarEquipo = equipo.buscarEquipo(scanner);
+            EquipoServicio buscarEquipo = equipo.buscarEquipo(scanner);
 
             if (buscarEquipo != null) {
                 System.out.println("\nEl equipo si esta en la lista");

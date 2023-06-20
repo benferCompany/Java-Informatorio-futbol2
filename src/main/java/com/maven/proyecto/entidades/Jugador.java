@@ -1,38 +1,72 @@
 package com.maven.proyecto.entidades;
 
-import java.util.Scanner;
 
-public interface Jugador {
+public class Jugador extends Persona{
 
-    public Jugador crearJugador(Scanner scanner);
-    public Jugador crearJugador(int ID, String nombre, String apellido, double altura, String posicion, int cantidadDeGoles, int cantidadDePartidos, boolean esCapitan, int numerosDeCamisetas);
-    public int getID();
-    public void setID(int ID);
-    public String getNombre();
-    public void setNombre(String nombre);
-    public String getApellido();
-    public void setApellido(String apellido);
-    public Double getAltura();
+    protected int idIncrement = 1;
+    protected Double altura;
+    protected Posiciones posicion;
+    protected int cantidadDeGoles;
+    protected int cantidadDePartidos;
+    protected Boolean esCapitan;
+    protected int numerosDeCamisetas;
 
-    public void setAltura(Double altura);
+        
 
-    public Posiciones getPosicion();
+    @Override
+    public String toString() {
+        return "Jugador{" + "ID=" + this.getID() + ", Nombre=" + this.getNombre() + ", Nombre=" + this.getApellido() + ", Altura=" + altura + ", posicion=" + posicion + ", cantidadDeGoles=" + cantidadDeGoles + ", cantidadDePartidos=" + cantidadDePartidos + ", esCapitan=" + esCapitan + ", numerosDeCamisetas=" + numerosDeCamisetas + '}';
+    }
 
-    public void setPosicion(Posiciones posicion);
+    public Double getAltura() {
+        return altura;
+    }
 
-    public int getCantidadDeGoles();
+    public void setAltura(Double altura) {
+        this.altura = altura;
+    }
 
-    public void setCantidadDeGoles(int cantidadDeGoles);
+    public Posiciones getPosicion() {
+        return posicion;
+    }
 
-    public int getCantidadDePartidos();
+    public void setPosicion(Posiciones posicion) {
+        this.posicion = posicion;
+    }
 
-    public void setCantidadDePartidos(int cantidadDePartidos);
+    public int getCantidadDeGoles() {
+        return cantidadDeGoles;
+    }
 
-    public Boolean getEsCapitan();
+    public void setCantidadDeGoles(int cantidadDeGoles) {
+        this.cantidadDeGoles = cantidadDeGoles;
+    }
 
-    public void setEsCapitan(Boolean esCapitan);
+    public int getCantidadDePartidos() {
+        return cantidadDePartidos;
+    }
 
-    public int getNumerosDeCamisetas();
+    public void setCantidadDePartidos(int cantidadDePartidos) {
+        this.cantidadDePartidos = cantidadDePartidos;
+    }
 
-    public void setNumerosDeCamisetas(int numerosDeCamisetas);
+    public Boolean getEsCapitan() {
+        return esCapitan;
+    }
+
+    public void setEsCapitan(Boolean esCapitan) {
+        this.esCapitan = esCapitan;
+    }
+
+    public int getNumerosDeCamisetas() {
+        return numerosDeCamisetas;
+    }
+
+    public void setNumerosDeCamisetas(int numerosDeCamisetas) {
+        this.numerosDeCamisetas = numerosDeCamisetas;
+    }
+    public void setIdIncrement(int i){
+        this.idIncrement =i;
+    }
+
 }

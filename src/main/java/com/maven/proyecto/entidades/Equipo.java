@@ -1,36 +1,61 @@
 package com.maven.proyecto.entidades;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+public class Equipo {
 
-public interface Equipo {
-    
-    public Equipo crearEquipo(Scanner scanner);
-    public Equipo buscarEquipo(Scanner scanner);
-    public Jugador buscarJugador(Scanner scanner);
-    public Jugador buscarCapitan(Scanner scanner);
-    public void EliminarEquipo(Equipo equipo);
-    public void importarJugadores(String url);
-    public void exportarJugadores(String rutaArchivo);
-    public int getID();
+    public int ID;
+    protected static int idIncrement = 1;
+    private String nombre;
+    protected List<Jugador> jugadores = new ArrayList<Jugador>();
+    private Entrenador entrenador;
+    protected List<Equipo> equipo = new ArrayList<Equipo>();
 
-    public void setID(int ID);
+  
+    @Override
+    public String toString() {
+        return "Equipo{" + "ID=" + ID + ", nombre=" + nombre + ", jugadores=" + jugadores + ", entrenador=" + entrenador + '}';
+    }
 
-    public String getNombre();
+    public int getID() {
+        return ID;
+    }
 
-    public void setNombre(String nombre);
+    public void setID(int ID) {
+        this.ID = ID;
+    }
 
-    public List<Jugador> getJugadores();
+    public String getNombre() {
+        return nombre;
+    }
 
-    public void setJugadores(List<Jugador> jugador);
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-    public Entrenador getEntrenador();
+    public List<Jugador> getJugadores() {
+        return jugadores;
+    }
 
-    public void setEntrenador(Entrenador entrenador);
+    public void setJugadores(List<Jugador> jugador) {
+        this.jugadores.addAll(jugador);
+    }
 
-    public List<Equipo> getEquipo();
+    public Entrenador getEntrenador() {
+        return entrenador;
+    }
 
-    public void setEquipo(Equipo equipo);
+    public void setEntrenador(Entrenador entrenador) {
+        this.entrenador = entrenador;
+    }
+
+    public List<Equipo> getEquipo() {
+        return equipo;
+    }
+
+    public void setEquipo(Equipo equipo) {
+        this.equipo.add(equipo);
+    }
 
 }
 

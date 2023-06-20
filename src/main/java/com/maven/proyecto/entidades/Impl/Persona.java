@@ -1,4 +1,4 @@
-package com.maven.proyecto.entidades.Impl;
+package com.maven.proyecto.entidades;
 
 public abstract class Persona {
     private int ID;
